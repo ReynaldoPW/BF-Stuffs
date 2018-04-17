@@ -10,6 +10,6 @@ Download and install Python: https://www.python.org/downloads/ (tested with vers
 Step 2
 Save the scripts somewhere and at the same place create two new folders: "result" and "resultEX" (case sensitive)
 
-Step 4
+Step 3
 Just double click the ".py" file and check the folder
 
