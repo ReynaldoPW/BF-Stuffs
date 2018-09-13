@@ -46,7 +46,7 @@ if __name__ == "__main__":
     print("Already exist: ", len(alreadyExistFiles))
 
     for i in range(1, 7):
-        for j in range(1, 150):
+        for j in range(0, 150):
             for k in range(7, 9):
                 s = "unit_ills_full_8%d%03d%d.png" % (i, j, k)                
                 if not (s in alreadyExistFiles):
