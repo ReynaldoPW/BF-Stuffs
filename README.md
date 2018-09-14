@@ -1,6 +1,18 @@
 (updated) script for grabbing unit arts for game brave frontier using blackrobe scripts from his repositories
 
-https://github.com/Blackrobe/blackrobe.github.io/tree/master/BFStoryArchive
+source: https://github.com/Blackrobe/blackrobe.github.io/tree/master/BFStoryArchive
+
+Index: 
+
+Gather Unit Ills = units from jp servers 
+
+Gather Exclusive Ills = extract gl units exclusive art from global servers
+
+Gather EU Exclusive Ills = extract EU units exclusive art from global servers
+
+Gather Exclusive Navi Chara = extract exclusive units NPC from global servers
+
+Gather Alternate Exclusive Unit Ills = extract exclusive Alt art units from global servers
 
 how to use:
 
