@@ -27,3 +27,9 @@ Save the scripts somewhere and at the same place create three new folders: "resu
 Step 3
 Just double click the ".py" file and check the folder
 
+--------------------------------------------------------------------------------------
+
+Testing Scripts for grabbing gacha image for the game Brave Frontier Using blackrobe script as a base[Experimental]
+
+
+
