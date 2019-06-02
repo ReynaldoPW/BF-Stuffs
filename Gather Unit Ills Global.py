@@ -18,7 +18,7 @@ def gatherUnitIlls(filename):
         f.close()
         
         print(filename, "found")
-        f = open ("resultGL/" + filename, "wb")
+        f = open ("result/" + filename, "wb")
         f.write(fetched)
         f.close()
 
@@ -40,7 +40,7 @@ if __name__ == "__main__":
 
     alreadyExistFiles = []
 
-    for filename in glob.glob("resultGL/" + "*.png"):    
+    for filename in glob.glob("result/" + "*.png"):    
         alreadyExistFiles.append(filename[9:])
 
     print("Already exist: ", len(alreadyExistFiles))
