@@ -4,8 +4,6 @@ source: https://github.com/Blackrobe/blackrobe.github.io/tree/master/BFStoryArch
 
 Index: 
 
-Gather Unit Ills = units from jp servers 
-
 Gather Unit Ills GL = units from gl servers (not exclusive) 
 
 Gather Exclusive Ills = extract gl units exclusive art from global servers
