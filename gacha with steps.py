@@ -41,7 +41,7 @@ if __name__ == "__main__":
 	alreadyExistFiles = []
 
 	for filename in glob.glob("gacha/" + "*.png"):    
-		alreadyExistFiles.append(filename[9:])
+		alreadyExistFiles.append(filename[6:])
 
 	print("Already exist: ", len(alreadyExistFiles))
 

@@ -9,23 +9,22 @@ fileList = []
 
 foundFilesCount = 0
 
-def gatherUnitIlls(filename):
+def gatherSphereIlls(filename):
 
     try:
-        f = urllib.request.urlopen("http://dlc.bfglobal.gumi.sg/content/unit/img/" + filename)
-        #f = urllib.urlopen("http://v2.cdn.android.brave.a-lim.jp//unit/img/" + filename)
+        f = urllib.request.urlopen("http://dlc.bfglobal.gumi.sg/content/item/" + filename)
         fetched = f.read()
         f.close()
         
         print(filename, "found")
-        f = open ("thum/" + filename, "wb")
+        f = open ("sphere/" + filename, "wb")
         f.write(fetched)
         f.close()
 
         global foundFilesCount
         foundFilesCount += 1
 
-        write_to_log("BFGL Unit Illustration", "Found " + filename + "\n")
+        write_to_log("BFGL Sphere Illustration", "Found " + filename + "\n")
         
     except urllib.error.URLError:    
         print("File not found : ", filename)
@@ -40,22 +39,22 @@ if __name__ == "__main__":
 
     alreadyExistFiles = []
 
-    for filename in glob.glob("thum/" + "*.png"):    
-        alreadyExistFiles.append(filename[5:])
+    for filename in glob.glob("sphere/" + "*.png"):    
+        alreadyExistFiles.append(filename[7:])
 
     print("Already exist: ", len(alreadyExistFiles))
 
-    for i in range(1, 7):
-        for j in range(0, 150):
-            for k in range(7, 9):
-                s = "unit_ills_thum_8%d%03d%d.png" % (i, j, k)                
+    for i in range(1, 2):
+        for j in range(900, 999):
+            for k in range(0, 10):
+                s = "sphere_thum_8%d%03d%d.png" % (i, j, k)                
                 if not (s in alreadyExistFiles):
                     fileList.append(s)
                 elif (s in alreadyExistFiles):
                     print(s, "already exist")
 
     for i, filename in enumerate(fileList):        
-        threadList.append(Thread(target = gatherUnitIlls, args = (filename,)))        
+        threadList.append(Thread(target = gatherSphereIlls, args = (filename,)))        
 
     for threadIndividual in threadList:
         sleep(0.1)
@@ -64,4 +63,4 @@ if __name__ == "__main__":
     for threadIndividual in threadList:
         threadIndividual.join()
 
-    write_to_log("BFGL Unit Illustration", "Found " + str(foundFilesCount) + " new files, " + str(len(alreadyExistFiles)) + " already exist files\n")
+    write_to_log("BFGL Sphere Illustration", "Found " + str(foundFilesCount) + " new files, " + str(len(alreadyExistFiles)) + " already exist files\n")
