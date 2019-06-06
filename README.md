@@ -1,4 +1,6 @@
-(updated) script for grabbing unit arts for game brave frontier using blackrobe scripts from his repositories
+***Blackrobe Unit Arts Gatherer***
+
+script for grabbing unit arts for game brave frontier using blackrobe scripts from his repositories
 
 source: https://github.com/Blackrobe/blackrobe.github.io/tree/master/BFStoryArchive
 
@@ -27,7 +29,15 @@ Just double click the ".py" file and check the folder
 
 --------------------------------------------------------------------------------------
 
-Testing Scripts for grabbing gacha image for the game Brave Frontier Using blackrobe script as a base[Experimental]
+***Gacha image Grabber***
+
+Scripts for grabbing gacha image for the game Brave Frontier Using blackrobe script as a base[Experimental]
+
+--------------------------------------------------------------------------------------
+
+***BF Cutscene EX Page Creator***
+
+Scripts for making and gathering cutscenes page of Brave Frontier exclusive event contents using blackrobe script as a base [Experimental]  
 
 
 
