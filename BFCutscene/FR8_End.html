@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="style/style.css">
+<link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 360px)" href="style-compact.css">
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-74917613-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+
+<div class="dungeonBackgroundContainer">
+<img class="dungeonFrame" src="dungeon_battle_collection/baseDungeonFrame.png" />
+<img class="dungeonImage" src="dungeon_battle_collection/dungeon_battle_80055.jpg" />
+</div>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/blank.png" />
+</div>
+<div class="speakerName"></div>
+<div class="speakerMessage"><div style="display:inline;font-size:24px">*CRASH*</size></div></div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/blank.png" />
+</div>
+<div class="speakerName"></div>
+<div class="speakerMessage">An earsplitting blast from the Elysians' combined assault causes the laboratory to shake violently.</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/blank.png" />
+</div>
+<div class="speakerName"></div>
+<div class="speakerMessage">As dust begins to settle, Nia and Elaina hobble over to the prone form of the beaten and bloodied demigod.</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80094_1.png" />
+</div>
+<div class="speakerName"><a href="http://i.imgur.com/VWB6V7O.png">Grandt</a></div>
+<div class="speakerMessage">Heh...hahaha! It's over now, you hunk of junk!</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80110_1.png" />
+</div>
+<div class="speakerName"><a href="http://i.imgur.com/xKAmG4k.png">Nia</a></div>
+<div class="speakerMessage">Whew...that was insane, Gramps! Where'd you get a gun like that?</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80094_2.png" />
+</div>
+<div class="speakerName">Grandt</div>
+<div class="speakerMessage">Stop calling me gramps!</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80091_1.png" />
+</div>
+<div class="speakerName"><a href="http://i.imgur.com/KyA5UOA.png">Elaina</a></div>
+<div class="speakerMessage">Hehe...you do seem to have aged since I last saw you...which was not THAT long ago.</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80091_1.png" />
+</div>
+<div class="speakerName">Elaina</div>
+<div class="speakerMessage">Worried sick, perhaps?</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80094_3.png" />
+</div>
+<div class="speakerName">Grandt</div>
+<div class="speakerMessage">*cough* No.</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80094_0.png" />
+</div>
+<div class="speakerName">Grandt</div>
+<div class="speakerMessage">Nia, turn away. This isn't a sight for innocent eyes.</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80094_0.png" />
+</div>
+<div class="speakerName">Grandt</div>
+<div class="speakerMessage">Elaina, Player, I leave the choice to you.</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80110_4.png" />
+</div>
+<div class="speakerName">Nia</div>
+<div class="speakerMessage">Huh? What're you-</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/blank.png" />
+</div>
+<div class="speakerName">   </div>
+<div class="speakerMessage">With a grim look on his face, Grandt presses his massive gunblade against the demigod.</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80094_2.png" />
+</div>
+<div class="speakerName">Grandt</div>
+<div class="speakerMessage">I'm going to put this bastard down for good.</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80091_2.png" />
+</div>
+<div class="speakerName">Elaina</div>
+<div class="speakerMessage">Grandt, stop!</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80094_4.png" />
+</div>
+<div class="speakerName">Grandt</div>
+<div class="speakerMessage">...Elaina?</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80091_0.png" />
+</div>
+<div class="speakerName">Elaina</div>
+<div class="speakerMessage">After all he put us through...what he did to Princess Estia and our home…</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80091_0.png" />
+</div>
+<div class="speakerName">Elaina</div>
+<div class="speakerMessage">After what he and another of his godforsaken kind did to me...to my magic…</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80091_2.png" />
+</div>
+<div class="speakerName">Elaina</div>
+<div class="speakerMessage">He doesn't deserve such mercy.</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80091_2.png" />
+</div>
+<div class="speakerName">Elaina</div>
+<div class="speakerMessage">I want him to suffer every step of the way to hell.</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/blank.png" />
+</div>
+<div class="speakerName">   </div>
+<div class="speakerMessage">Elaina kicks angrily at the fallen demigod. After a few pained moans, Draegar stops moving entirely.</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80091_2.png" />
+</div>
+<div class="speakerName">Elaina</div>
+<div class="speakerMessage">Rot in hell, you monster.</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80110_3.png" />
+</div>
+<div class="speakerName">Nia</div>
+<div class="speakerMessage">Elaina...is that why you couldn't…</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80091_0.png" />
+</div>
+<div class="speakerName">Elaina</div>
+<div class="speakerMessage">Help you in battle? Yes. The magic in my veins...I don't feel it there anymore.</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80091_3.png" />
+</div>
+<div class="speakerName">Elaina</div>
+<div class="speakerMessage">I don't know if it's coming back.</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80110_4.png" />
+</div>
+<div class="speakerName">Nia</div>
+<div class="speakerMessage">Nonsense. You're Elaina, the Time-Weaver! It'll come back for sure!</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80110_0.png" />
+</div>
+<div class="speakerName">Nia</div>
+<div class="speakerMessage">C'mon, where's the Elaina I know? </div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80091_1.png" />
+</div>
+<div class="speakerName">Elaina</div>
+<div class="speakerMessage">Oh, my dear Nia. It's good to see you again.</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80091_1.png" />
+</div>
+<div class="speakerName">Elaina</div>
+<div class="speakerMessage">You too, Grandt. You brought everyone to rescue me.</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80091_3.png" />
+</div>
+<div class="speakerName">Elaina</div>
+<div class="speakerMessage">But...how did you come here? And more importantly, how will we get back?</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80091_3.png" />
+</div>
+<div class="speakerName">Elaina</div>
+<div class="speakerMessage">I'm afraid what paltry magic I still possess isn't of much use now…</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80094_1.png" />
+</div>
+<div class="speakerName">Grandt</div>
+<div class="speakerMessage">Heh. Not to worry. Player's friend will take care of it.</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80094_1.png" />
+</div>
+<div class="speakerName">Grandt</div>
+<div class="speakerMessage">...Right?</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80094_0.png" />
+</div>
+<div class="speakerName">Grandt</div>
+<div class="speakerMessage">...He says there'll be complications? What exactly?</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80094_0.png" />
+</div>
+<div class="speakerName">Grandt</div>
+<div class="speakerMessage">Mmm...so we may not return "intact"...whatever that means.</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80091_3.png" />
+</div>
+<div class="speakerName">Elaina</div>
+<div class="speakerMessage">We do not have much of a choice, do we?</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80110_0.png" />
+</div>
+<div class="speakerName">Nia</div>
+<div class="speakerMessage">We'll get through this. We already took down a god, you know.</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80094_0.png" />
+</div>
+<div class="speakerName">Grandt</div>
+<div class="speakerMessage">So ends our vengeance...the beast who razed our home and slaughtered our people…</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80094_1.png" />
+</div>
+<div class="speakerName">Grandt</div>
+<div class="speakerMessage">And you were there with us the entire way, Player. How can we ever repay you?</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80091_0.png" />
+</div>
+<div class="speakerName">Elaina</div>
+<div class="speakerMessage">Player...as a manipulator of time and space, I have studied and know of the side effects all too well.</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80091_0.png" />
+</div>
+<div class="speakerName">Elaina</div>
+<div class="speakerMessage">If it comes to pass that we no longer remember you...that memories of our journey have disappeared…</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80091_1.png" />
+</div>
+<div class="speakerName">Elaina</div>
+<div class="speakerMessage">Then, let us express our deepest gratitude to you here and now, for being a stalwart friend and ally.</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80110_3.png" />
+</div>
+<div class="speakerName">Nia</div>
+<div class="speakerMessage">Hey, uhh...I'm sorry I hit you the first time we met.</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80110_0.png" />
+</div>
+<div class="speakerName">Nia</div>
+<div class="speakerMessage">I don't want us to part on bad terms, you know.</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80110_0.png" />
+</div>
+<div class="speakerName">Nia</div>
+<div class="speakerMessage">I mean, if you ever come back and visit or something, it'll get awkward.</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80091_1.png" />
+</div>
+<div class="speakerName">Elaina</div>
+<div class="speakerMessage">Oh, Nia. You never change, do you?</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80091_1.png" />
+</div>
+<div class="speakerName">Elaina</div>
+<div class="speakerMessage">Well, I suppose we should be on our way.</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80091_1.png" />
+</div>
+<div class="speakerName">Elaina</div>
+<div class="speakerMessage">Farewell, Player. Be safe. Always.</div>
+</div>
+<br>
+
+
+<div class="dungeonBackgroundContainer">
+<img class="dungeonFrame" src="dungeon_battle_collection/baseDungeonFrame.png" />
+<img class="dungeonImage" src="dungeon_battle_collection/dungeon_battle_81002.jpg" />
+</div>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80033_0.png" />
+</div>
+<div class="speakerName"><a href="http://i.imgur.com/X8CwkqD.png">Ultor</a></div>
+<div class="speakerMessage">Hmph...do your worst, traitor.</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80033_0.png" />
+</div>
+<div class="speakerName">Ultor</div>
+<div class="speakerMessage">The rest will be back. And we will destroy you.</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/blank.png" />
+</div>
+<div class="speakerName">   </div>
+<div class="speakerMessage">Summoning all of his strength, Ultor forces Gazia's hand to bind all magic to him, freeing the other demigods from the time freeze.</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80033_2.png" />
+</div>
+<div class="speakerName">Ultor</div>
+<div class="speakerMessage">Run! Run while you can! Live to fight another day!</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80032_5.png" />
+</div>
+<div class="speakerName"><a href="http://i.imgur.com/mLQbLwX.png">Aurelia</a></div>
+<div class="speakerMessage">Ultor!</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80089_5.png" />
+</div>
+<div class="speakerName"><a href="http://i.imgur.com/8LSWa58.png">Hadaron</a></div>
+<div class="speakerMessage">Aurelia. Come. I will end that madman myself...I swear it.</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80088_2.png" />
+</div>
+<div class="speakerName"><a href="http://i.imgur.com/ohm6jS4.png">Tridon</a></div>
+<div class="speakerMessage">He will not go unpunished for much longer. Go. I will cover our escape.</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80088_2.png" />
+</div>
+<div class="speakerName">Tridon</div>
+<div class="speakerMessage">We cannot hope to face him in this state. We must fall back for now.</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80104.png" />
+</div>
+<div class="speakerName"><a href="http://i.imgur.com/yLGbpxp.png">   </a></div>
+<div class="speakerMessage">Kranus moves to pursue the fleeing demigods, but Gazia stops him.</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80035_0.png" />
+</div>
+<div class="speakerName"><a href="http://i.imgur.com/x35aR1z.png">Gazia</a></div>
+<div class="speakerMessage">Tch. Beating a hasty retreat, hmm? No matter.</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80035_1.png" />
+</div>
+<div class="speakerName">Gazia</div>
+<div class="speakerMessage">We'll find the rest sooner or later. There's nowhere else for them to run.</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80035_1.png" />
+</div>
+<div class="speakerName">Gazia</div>
+<div class="speakerMessage">All the better for me to finally be rid of one of you.</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80035_1.png" />
+</div>
+<div class="speakerName">Gazia</div>
+<div class="speakerMessage">Haven't I seen this before? Ahh, yes...Zedus did the very same.</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80035_2.png" />
+</div>
+<div class="speakerName">Gazia</div>
+<div class="speakerMessage">The look on his face as I brought the city down with him!</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80035_2.png" />
+</div>
+<div class="speakerName">Gazia</div>
+<div class="speakerMessage">Trying to be half the leader he was, are you?</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80033_0.png" />
+</div>
+<div class="speakerName">Ultor</div>
+<div class="speakerMessage">The words of a heretic have no bearing on me.</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80035_0.png" />
+</div>
+<div class="speakerName">Gazia</div>
+<div class="speakerMessage">Tsk. Stubborn even in the face of impending demise. Kranus?</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80104.png" />
+</div>
+<div class="speakerName">Kranus</div>
+<div class="speakerMessage">Your orders, Master?</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80035_2.png" />
+</div>
+<div class="speakerName">Gazia</div>
+<div class="speakerMessage">Execute him.</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80104.png" />
+</div>
+<div class="speakerName">Kranus</div>
+<div class="speakerMessage">Yes, Master.</div>
+</div>
+<br>
+
+
+<div class="dialogueContainer">
+<div class="facePortrait">
+<img class="facePortraitFrame" src="navi_chara_collection/characterFrame.png" />
+<img class="facePortraitImg" src="navi_chara_collection/navi_chara80033_1.png" />
+</div>
+<div class="speakerName">Ultor</div>
+<div class="speakerMessage">Glory...be...to Lord Zedus.</div>
+</div>
+<br>
+
+</body>
+</html>
+
+
+
+<!-- contact me at reddit /u/blackrobe199 -->
