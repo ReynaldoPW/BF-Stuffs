@@ -174,8 +174,13 @@ if __name__ == "__main__":
 						
 					s = "gacha_img_201906%02dZ.png" % (i)
 				
-			elif (s in alreadyExistFiles):
-				print(s, "already exist")
+			if not (s in alreadyExistFiles):
+				fileList.append(s)
+
+			for j in range(0,13):
+                                s = "Brave19%02d.png" % (j)
+                                if not (s in alreadyExistFiles):
+                                        fileList.append(s)
 
 	for i, filename in enumerate(fileList):        
 		threadList.append(Thread(target = gatherUnitIlls, args = (filename,)))        
