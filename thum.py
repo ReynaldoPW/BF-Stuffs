@@ -51,13 +51,6 @@ if __name__ == "__main__":
                     s = "unit_ills_thum_8%d%03d%d.png" % (i, j, k)
                     if not (s in alreadyExistFiles):
                         fileList.append(s)
-                    for i in range(1, 7):
-                        for j in range(0, 150):
-                            for k in range(7, 9):
-                                s = "unit_ills_thum_8%d%03d%d_100.png" % (i, j, k)
-
-                        if not (s in alreadyExistFiles):
-                            fileList.append(s)
 
     for i, filename in enumerate(fileList):        
         threadList.append(Thread(target = gatherUnitIlls, args = (filename,)))        
