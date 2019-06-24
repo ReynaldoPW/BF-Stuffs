@@ -46,14 +46,13 @@ if __name__ == "__main__":
 	print("Already exist: ", len(alreadyExistFiles))
 
 	
-	for i in range(1, 30):
+	for i in range(25, 30):
 		for j in range(1,9):
 		   
 			s = "gacha_img_201906%02dA_s%d.png" % (i, j)
 
 			if not (s in alreadyExistFiles):
 					fileList.append(s)
-
 					s = "gacha_img_201906%02dB_s%d.png" % (i, j)
 
 					if not s in alreadyExistFiles:
@@ -178,6 +177,7 @@ if __name__ == "__main__":
 				
 			elif (s in alreadyExistFiles):
 				print(s, "already exist")
+
 
 	for i, filename in enumerate(fileList):        
 		threadList.append(Thread(target = gatherUnitIlls, args = (filename,)))        
