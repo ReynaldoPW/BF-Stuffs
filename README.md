@@ -33,11 +33,8 @@ Just double click the ".py" file and check the folder
 
 Scripts for grabbing gacha image for the game Brave Frontier Using blackrobe script as a base[Experimental]
 
---------------------------------------------------------------------------------------
 
-***BF Cutscene EX Page Creator***
 
-Scripts for making and gathering cutscenes page of Brave Frontier exclusive event contents using blackrobe script as a base [Experimental]  
 
 
 
