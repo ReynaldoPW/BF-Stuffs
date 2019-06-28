@@ -12,7 +12,7 @@ foundFilesCount = 0
 def gatherUnitIlls(filename):
 
     try:
-        f = urllib.request.urlopen("http://dlc.bfglobal.gumi.sg/content/unit/img/" + filename)
+        f = urllib.request.urlopen("http://dv5bk1m8igv7v.cloudfront.net/asset/2200/content/unit/img/" + filename)
         #f = urllib.urlopen("http://v2.cdn.android.brave.a-lim.jp//unit/img/" + filename)
         fetched = f.read()
         f.close()
@@ -58,7 +58,7 @@ if __name__ == "__main__":
         threadList.append(Thread(target = gatherUnitIlls, args = (filename,)))        
 
     for threadIndividual in threadList:
-        sleep(0.1)
+        sleep(0.05)
         threadIndividual.start()
     
     for threadIndividual in threadList:
