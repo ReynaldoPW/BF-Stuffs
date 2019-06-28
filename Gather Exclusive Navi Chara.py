@@ -12,7 +12,7 @@ foundFilesCount = 0
 def gatherNaviChara(filename):    
     
     try:
-        f = urllib.request.urlopen("http://dlc.bfglobal.gumi.sg/content/event/" + filename)
+        f = urllib.request.urlopen("http://dv5bk1m8igv7v.cloudfront.net/asset/2200/content/event/" + filename)
         fetched = f.read()
         f.close()
 
