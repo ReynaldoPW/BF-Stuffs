@@ -51,7 +51,28 @@ if __name__ == "__main__":
             s = "navi_chara80%03d_%d.png" % (i,j)
 
             if not s in alreadyExistFiles:
-                fileList.append(s)            
+                fileList.append(s)
+                
+        for j in range(0, 12):
+
+            s = "navi_chara80%03da_%d.png" % (i,j)
+
+            if not s in alreadyExistFiles:
+                fileList.append(s)
+                
+        for j in range(0, 12):
+
+            s = "navi_chara80%03db_%d.png" % (i,j)
+
+            if not s in alreadyExistFiles:
+                fileList.append(s)
+                
+        for j in range(0, 12):
+
+            s = "navi_chara80%03dc_%d.png" % (i,j)
+
+            if not s in alreadyExistFiles:
+                fileList.append(s) 
 
     for i, filename in enumerate(fileList):        
         threadList.append(Thread(target = gatherNaviChara, args = (filename,)))
