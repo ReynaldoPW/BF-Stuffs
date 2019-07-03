@@ -13,6 +13,7 @@ def gatherNaviChara(filename):
     
     try:
         f = urllib.request.urlopen("http://dv5bk1m8igv7v.cloudfront.net/asset/2200/content/event/" + filename)
+        #f = urllib.request.urlopen("http://cdn.android.brave.a-lim.jp/event/" + filename)
         fetched = f.read()
         f.close()
 
