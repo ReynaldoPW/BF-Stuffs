@@ -12,7 +12,7 @@ foundFilesCount = 0
 def gatherSphereIlls(filename):
 
     try:
-        f = urllib.request.urlopen("http://dv5bk1m8igv7v.cloudfront.net/asset/2200/content/item/" + filename)
+        f = urllib.request.urlopen("http://dv5bk1m8igv7v.cloudfront.net/asset/2220/content/item/" + filename)
         fetched = f.read()
         f.close()
         
