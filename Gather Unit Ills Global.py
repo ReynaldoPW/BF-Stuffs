@@ -12,8 +12,8 @@ foundFilesCount = 0
 def gatherUnitIlls(filename):
 
     try:
-        f = urllib.request.urlopen("http://dv5bk1m8igv7v.cloudfront.net/asset/2200/content/unit/img/" + filename)
-        #f = urllib.urlopen("http://v2.cdn.android.brave.a-lim.jp//unit/img/" + filename)
+        #f = urllib.request.urlopen("http://dv5bk1m8igv7v.cloudfront.net/asset/2200/content/unit/img/" + filename)
+        f = urllib.request.urlopen("http://cdn.android.brave.a-lim.jp/unit/img/" + filename)
         fetched = f.read()
         f.close()
         
@@ -47,7 +47,7 @@ if __name__ == "__main__":
 
     for i in range(1, 7):
         for j in range(1, 150):
-            for k in range(7, 9):
+            for k in range(6, 9):
                 s = "unit_ills_full_%d%03d%d.png" % (i, j, k)                
                 if not (s in alreadyExistFiles):
                     fileList.append(s)
