@@ -183,7 +183,7 @@ if __name__ == "__main__":
 		threadList.append(Thread(target = gatherUnitIlls, args = (filename,)))        
 
 	for threadIndividual in threadList:
-		sleep(0.03)
+		sleep(0.01)
 		threadIndividual.start()
 	
 	for threadIndividual in threadList:
