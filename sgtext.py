@@ -12,7 +12,7 @@ foundFilesCount = 0
 def gatherNaviChara(filename):    
     
     try:
-        f = urllib.request.urlopen("http://dv5bk1m8igv7v.cloudfront.net/asset/2300/content/sgtext/" + filename)
+        f = urllib.request.urlopen("http://dv5bk1m8igv7v.cloudfront.net/asset/2400/content/sgtext/" + filename)
         #f = urllib.request.urlopen("http://cdn.android.brave.a-lim.jp/event/" + filename)
         fetched = f.read()
         f.close()
@@ -39,49 +39,49 @@ if __name__ == "__main__":
     for filename in glob.glob("resultSgtext/" + "*.png"):    
         alreadyExistFiles.append(filename[9:])
     
-    for i in range(355, 370):
+    for i in range(355, 400):
 
         s = "sgtext_units_%03d.zip" % (i)
         
         if not s in alreadyExistFiles:        
             fileList.append(s)
 
-        for j in range(520, 530):
+        for j in range(520, 560):
 
             s = "sgtext_SkillDescription_%03d.zip" % (j)
 
             if not s in alreadyExistFiles:
                 fileList.append(s)
                 
-        for k in range(285, 300):
+        for k in range(285, 330):
 
             s = "sgtext_en_%03d.zip" % (k)
             
             if not s in alreadyExistFiles:
                 fileList.append(s)
                 
-        for l in range(415, 430):
+        for l in range(415, 460):
 
             s = "sgtext_extraPassiveSkill_DESC_%03d.zip" % (l)
             
             if not s in alreadyExistFiles:
                 fileList.append(s)
                 
-        for m in range(245, 260):
+        for m in range(245, 290):
 
             s = "sgtext_spheresShortDescription_%03d.zip" % (m)
             
             if not s in alreadyExistFiles:
                 fileList.append(s)
                 
-        for n in range(400, 420):
+        for n in range(400, 450):
 
             s = "sgtext_leaderSkillDescription_%03d.zip" % (n)
             
             if not s in alreadyExistFiles:
                 fileList.append(s)
                 
-        for o in range(285, 300):
+        for o in range(285, 330):
             s = "sgtext_FE_SKILL_NAME_%03d.zip" % (o)
             if not s in alreadyExistFiles:
                 fileList.append(s)
