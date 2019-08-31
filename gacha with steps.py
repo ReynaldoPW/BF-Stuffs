@@ -46,7 +46,7 @@ if __name__ == "__main__":
 	print("Already exist: ", len(alreadyExistFiles))
 
 	
-	for i in range(28, 32):
+	for i in range(1, 32):
 		for j in range(1,36):
 		   
 			s = "gacha_img_201909%02dA_S%d.png" % (i, j)
