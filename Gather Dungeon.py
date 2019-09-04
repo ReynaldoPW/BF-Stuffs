@@ -40,7 +40,7 @@ if __name__ == "__main__":
     
     for i in range(0, 7):
         for j in range(0, 150):
-            for k in range(0, 9):
+            for k in range(0, 10):
                     s = "sp_quest_banner_8%d%03d%d.png" % (i, j, k)
                     if not (s in alreadyExistFiles):
                         fileList.append(s)
