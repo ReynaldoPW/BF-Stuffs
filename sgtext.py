@@ -36,7 +36,7 @@ if __name__ == "__main__":
 
     alreadyExistFiles = []
 
-    for filename in glob.glob("resultSgtext/" + "*.png"):    
+    for filename in glob.glob("resultSgtext/" + ""):    
         alreadyExistFiles.append(filename[9:])
     
     for i in range(355, 400):
@@ -46,14 +46,14 @@ if __name__ == "__main__":
         if not s in alreadyExistFiles:        
             fileList.append(s)
 
-        for j in range(520, 560):
+        for j in range(530, 560):
 
             s = "sgtext_SkillDescription_%03d.zip" % (j)
 
             if not s in alreadyExistFiles:
                 fileList.append(s)
                 
-        for k in range(285, 330):
+        for k in range(295, 330):
 
             s = "sgtext_en_%03d.zip" % (k)
             
