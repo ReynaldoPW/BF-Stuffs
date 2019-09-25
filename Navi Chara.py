@@ -12,12 +12,13 @@ foundFilesCount = 0
 def gatherNaviChara(filename):    
     
     try:
-        f = urllib.request.urlopen("http://dv5bk1m8igv7v.cloudfront.net/asset/2500/content/dungeon/" + filename)
+        #f = urllib.request.urlopen("http://dv5bk1m8igv7v.cloudfront.net/asset/2200/content/event/" + filename)
+        f = urllib.request.urlopen("http://cdn.android.brave.a-lim.jp/event/" + filename)
         fetched = f.read()
         f.close()
 
         print(filename, "found")
-        f = open ("resultDungeon/" + filename, "wb")
+        f = open ("result/" + filename, "wb")
         f.write(fetched)
         f.close()
 
@@ -35,26 +36,28 @@ if __name__ == "__main__":
 
     alreadyExistFiles = []
 
-    for filename in glob.glob("resultDungeon/" + "*.png"):    
-        alreadyExistFiles.append(filename[7:])
+    for filename in glob.glob("result/" + "*.png"):    
+        alreadyExistFiles.append(filename[9:])
     
-    for i in range(0, 7):
-        for j in range(0, 150):
-            for k in range(0, 10):
-                    s = "sp_quest_banner_8%d%03d%d.png" % (i, j, k)
-                    if not (s in alreadyExistFiles):
-                        fileList.append(s)
+    for i in range(1, 200):
 
-                    for l in range(0, 6):
-                        s = "sp_quest_banner_8%d%03d%d_%d.png" % (i, j, k, l)
-                        if not s in alreadyExistFiles:
-                            fileList.append(s) 
+        s = "navi_chara%d.png" % (i,)
+        
+        if not s in alreadyExistFiles:        
+            fileList.append(s)
+
+        for j in range(0, 12):
+
+            s = "navi_chara%d_%d.png" % (i,j)
+
+            if not s in alreadyExistFiles:
+                fileList.append(s)            
 
     for i, filename in enumerate(fileList):        
         threadList.append(Thread(target = gatherNaviChara, args = (filename,)))
 
     for threadIndividual in threadList:
-        sleep(0.1)
+        sleep(0.02)
         threadIndividual.start()
     
     for threadIndividual in threadList:
