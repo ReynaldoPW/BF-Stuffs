@@ -12,7 +12,7 @@ foundFilesCount = 0
 def gatherNaviChara(filename):    
     
     try:
-        f = urllib.request.urlopen("http://dv5bk1m8igv7v.cloudfront.net/asset/2500/content/sgtext/" + filename)
+        f = urllib.request.urlopen("http://dv5bk1m8igv7v.cloudfront.net/asset/2600/content/sgtext/" + filename)
         #f = urllib.request.urlopen("http://cdn.android.brave.a-lim.jp/event/" + filename)
         fetched = f.read()
         f.close()
@@ -46,7 +46,7 @@ if __name__ == "__main__":
         if not s in alreadyExistFiles:        
             fileList.append(s)
 
-        for j in range(535, 560):
+        for j in range(540, 560):
 
             s = "sgtext_SkillDescription_%03d.zip" % (j)
 
