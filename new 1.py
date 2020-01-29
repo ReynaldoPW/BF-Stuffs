@@ -12,13 +12,13 @@ foundFilesCount = 0
 def gatherUnitIlls(filename):
 
     try:
-        f = urllib.request.urlopen("http://dv5bk1m8igv7v.cloudfront.net/asset/21000/content/unit/img/" + filename)
+        f = urllib.request.urlopen("http://news.gumi.sg/bravefrontier/news/files/html/2020-01/" + filename)
         #f = urllib.urlopen("http://v2.cdn.android.brave.a-lim.jp//unit/img/" + filename)
         fetched = f.read()
         f.close()
         
         print(filename, "found")
-        f = open ("thum/" + filename, "wb")
+        f = open ("resultEX/" + filename, "wb")
         f.write(fetched)
         f.close()
 
@@ -40,17 +40,19 @@ if __name__ == "__main__":
 
     alreadyExistFiles = []
 
-    for filename in glob.glob("thum/" + "*.png"):    
-        alreadyExistFiles.append(filename[5:])
+    for filename in glob.glob("resultEX/" + "*.html"):    
+        alreadyExistFiles.append(filename[9:])
 
     print("Already exist: ", len(alreadyExistFiles))
 
-    for i in range(1, 7):
-        for j in range(0, 150):
-            for k in range(7, 9):
-                    s = "unit_ills_thum_8%d%03d%d_100.png" % (i, j, k)
-                    if not (s in alreadyExistFiles):
-                        fileList.append(s)
+    for i in range(0, 10):
+        for j in range(0, 99):
+            for k in range(0, 999):
+                s = "UnitDetails_Miriam_1580%d%02d%03d.html" % (i, j, k)                
+                if not (s in alreadyExistFiles):
+                    fileList.append(s)
+                elif (s in alreadyExistFiles):
+                    print(s, "already exist")
 
     for i, filename in enumerate(fileList):        
         threadList.append(Thread(target = gatherUnitIlls, args = (filename,)))        
