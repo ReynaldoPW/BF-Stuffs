@@ -46,7 +46,7 @@ if __name__ == "__main__":
         if not s in alreadyExistFiles:        
             fileList.append(s)
 
-        for j in range(550, 650):
+        for j in range(580, 650):
 
             s = "sgtext_SkillDescription_%03d.zip" % (j)
 
@@ -60,7 +60,7 @@ if __name__ == "__main__":
             if not s in alreadyExistFiles:
                 fileList.append(s)
                 
-        for l in range(460, 490):
+        for l in range(470, 490):
 
             s = "sgtext_extraPassiveSkill_DESC_%03d.zip" % (l)
             
@@ -81,7 +81,7 @@ if __name__ == "__main__":
             if not s in alreadyExistFiles:
                 fileList.append(s)
                 
-        for o in range(315, 360):
+        for o in range(340, 360):
 		
             s = "sgtext_FE_SKILL_NAME_%03d.zip" % (o)
 			
