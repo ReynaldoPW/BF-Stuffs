@@ -47,7 +47,7 @@ if __name__ == "__main__":
 
 	
 	for i in range(15, 32):
-		for j in range(1,36):
+		for j in range(1,51):
 		   
 			s = "gacha_img_202004%02dA_s%d.png" % (i, j)
 
