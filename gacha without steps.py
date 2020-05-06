@@ -12,7 +12,7 @@ foundFilesCount = 0
 def gatherUnitIlls(filename):
 
 	try:
-		f = urllib.request.urlopen("http://dv5bk1m8igv7v.cloudfront.net/asset/21300/content/gacha/" + filename)
+		f = urllib.request.urlopen("http://dv5bk1m8igv7v.cloudfront.net/asset/21400/content/gacha/" + filename)
 		#f = urllib.urlopen("http://v2.cdn.android.brave.a-lim.jp//unit/img/" + filename)
 		fetched = f.read()
 		f.close()
@@ -47,132 +47,132 @@ if __name__ == "__main__":
 
 	
 	for i in range(1, 32):
-			s = "gacha_img_202004%02dA.png" % (i)
+			s = "gacha_img_202005%02dA.png" % (i)
 
 			if not (s in alreadyExistFiles):
 					fileList.append(s)
 
-					s = "gacha_img_202004%02dB.png" % (i)
+					s = "gacha_img_202005%02dB.png" % (i)
 
 					if not s in alreadyExistFiles:
 						fileList.append(s)
 						
-					s = "gacha_img_202004%02dC.png" % (i)
+					s = "gacha_img_202005%02dC.png" % (i)
 				
 					if not s in alreadyExistFiles:
 							fileList.append(s)
 						
-					s = "gacha_img_202004%02dD.png" % (i)
+					s = "gacha_img_202005%02dD.png" % (i)
 
 					if not s in alreadyExistFiles:
 							fileList.append(s)
 						
-					s = "gacha_img_202004%02dE.png" % (i)
+					s = "gacha_img_202005%02dE.png" % (i)
 
 					if not s in alreadyExistFiles:
 							fileList.append(s)
 						
-					s = "gacha_img_202004%02dF.png" % (i)
+					s = "gacha_img_202005%02dF.png" % (i)
 
 					if not s in alreadyExistFiles:
 							fileList.append(s)
 						
-					s = "gacha_img_202004%02dG.png" % (i)
+					s = "gacha_img_202005%02dG.png" % (i)
 
 					if not s in alreadyExistFiles:
 							fileList.append(s)
 						
-					s = "gacha_img_202004%02dH.png" % (i)
+					s = "gacha_img_202005%02dH.png" % (i)
 
 					if not s in alreadyExistFiles:
 							fileList.append(s)
 						
-					s = "gacha_img_202004%02dI.png" % (i)
+					s = "gacha_img_202005%02dI.png" % (i)
 
 					if not s in alreadyExistFiles:
 							fileList.append(s)
 						
-					s = "gacha_img_202004%02dJ.png" % (i)
+					s = "gacha_img_202005%02dJ.png" % (i)
 
 					if not s in alreadyExistFiles:
 							fileList.append(s)
 						
-					s = "gacha_img_202004%02dK.png" % (i)
+					s = "gacha_img_202005%02dK.png" % (i)
 
 					if not s in alreadyExistFiles:
 							fileList.append(s)
 						
-					s = "gacha_img_202004%02dL.png" % (i)
+					s = "gacha_img_202005%02dL.png" % (i)
 
 					if not s in alreadyExistFiles:
 							fileList.append(s)
 						
-					s = "gacha_img_202004%02dM.png" % (i)
+					s = "gacha_img_202005%02dM.png" % (i)
 
 					if not s in alreadyExistFiles:
 							fileList.append(s)
 						
-					s = "gacha_img_202004%02dN.png" % (i)
+					s = "gacha_img_202005%02dN.png" % (i)
 
 					if not s in alreadyExistFiles:
 							fileList.append(s)
 						
-					s = "gacha_img_202004%02dO.png" % (i)
+					s = "gacha_img_202005%02dO.png" % (i)
 
 					if not s in alreadyExistFiles:
 							fileList.append(s)
 						
-					s = "gacha_img_202004%02dP.png" % (i)
+					s = "gacha_img_202005%02dP.png" % (i)
 
 					if not s in alreadyExistFiles:
 							fileList.append(s)
 						
-					s = "gacha_img_202004%02dQ.png" % (i)
+					s = "gacha_img_202005%02dQ.png" % (i)
 
 					if not s in alreadyExistFiles:
 							fileList.append(s)
 						
-					s = "gacha_img_202004%02dR.png" % (i)
+					s = "gacha_img_202005%02dR.png" % (i)
 
 					if not s in alreadyExistFiles:
 							fileList.append(s)
 						
-					s = "gacha_img_202004%02dS.png" % (i)
+					s = "gacha_img_202005%02dS.png" % (i)
 
 					if not s in alreadyExistFiles:
 							fileList.append(s)
 						
-					s = "gacha_img_202004%02dT.png" % (i)
+					s = "gacha_img_202005%02dT.png" % (i)
 
 					if not s in alreadyExistFiles:
 							fileList.append(s)
 						
-					s = "gacha_img_202004%02dU.png" % (i)
+					s = "gacha_img_202005%02dU.png" % (i)
 
 					if not s in alreadyExistFiles:
 							fileList.append(s)
 						
-					s = "gacha_img_202004%02dV.png" % (i)
+					s = "gacha_img_202005%02dV.png" % (i)
 
 					if not s in alreadyExistFiles:
 							fileList.append(s)
 						
-					s = "gacha_img_202004%02dW.png" % (i)
+					s = "gacha_img_202005%02dW.png" % (i)
 
 					if not s in alreadyExistFiles:
 							fileList.append(s)
 						
-					s = "gacha_img_202004%02dX.png" % (i)
+					s = "gacha_img_202005%02dX.png" % (i)
 
 					if not s in alreadyExistFiles:
 							fileList.append(s)
 						
-					s = "gacha_img_202004%02dY.png" % (i)
+					s = "gacha_img_202005%02dY.png" % (i)
 
 					if not s in alreadyExistFiles:
 							fileList.append(s)
 						
-					s = "gacha_img_202004%02dZ.png" % (i)
+					s = "gacha_img_202005%02dZ.png" % (i)
 				
 			if not (s in alreadyExistFiles):
 				fileList.append(s)
