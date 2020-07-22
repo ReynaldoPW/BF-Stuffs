@@ -12,8 +12,8 @@ foundFilesCount = 0
 def gatherNaviChara(filename):    
     
     try:
-        f = urllib.request.urlopen("http://dv5bk1m8igv7v.cloudfront.net/asset/2900/content/event/" + filename)
-        #f = urllib.request.urlopen("http://cdn.android.brave.a-lim.jp/event/" + filename)
+        #f = urllib.request.urlopen("http://dv5bk1m8igv7v.cloudfront.net/asset/21600/content/event/" + filename)
+        f = urllib.request.urlopen("http://cdn.android.brave.a-lim.jp/event/" + filename)
         fetched = f.read()
         f.close()
 
