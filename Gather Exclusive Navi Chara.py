@@ -39,7 +39,7 @@ if __name__ == "__main__":
     for filename in glob.glob("resultEX/" + "*.png"):    
         alreadyExistFiles.append(filename[9:])
     
-    for i in range(1, 200):
+    for i in range(180, 300):
 
         s = "navi_chara80%03d.png" % (i,)
         
