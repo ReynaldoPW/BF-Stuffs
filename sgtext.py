@@ -46,7 +46,7 @@ if __name__ == "__main__":
         if not s in alreadyExistFiles:        
             fileList.append(s)
 
-        for j in range(600, 610):
+        for j in range(610, 620):
 
             s = "sgtext_SkillDescription_%03d.zip" % (j)
 
