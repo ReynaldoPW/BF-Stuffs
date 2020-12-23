@@ -12,7 +12,7 @@ foundFilesCount = 0
 def gatherUnitIlls(filename):
 
     try:
-        f = urllib.request.urlopen("http://dv5bk1m8igv7v.cloudfront.net/asset/21600/content/unit/img/" + filename)
+        f = urllib.request.urlopen("http://dv5bk1m8igv7v.cloudfront.net/asset/21900/content/unit/img/" + filename)
         #f = urllib.urlopen("http://v2.cdn.android.brave.a-lim.jp//unit/img/" + filename)
         fetched = f.read()
         f.close()
