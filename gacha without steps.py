@@ -178,7 +178,7 @@ if __name__ == "__main__":
 				fileList.append(s)
 
 			for j in range(0,13):
-                                s = "Brave20%02d.png" % (j)
+                                s = "Brave21%02d.png" % (j)
                                 if not (s in alreadyExistFiles):
                                         fileList.append(s)
 
