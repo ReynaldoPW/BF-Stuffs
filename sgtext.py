@@ -81,7 +81,7 @@ if __name__ == "__main__":
             if not s in alreadyExistFiles:
                 fileList.append(s)
                 
-        for o in range(353, 390):
+        for o in range(353, 410):
 		
             s = "sgtext_FE_SKILL_NAME_%03d.zip" % (o)
 			
