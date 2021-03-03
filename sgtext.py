@@ -87,6 +87,20 @@ if __name__ == "__main__":
 			
             if not s in alreadyExistFiles:
                 fileList.append(s)
+                
+        for p in range(432, 450):
+            
+            s = "sgtext_extraPassiveSkill_Name_%03d.zip" % (p)
+            
+            if not s in alreadyExistFiles:
+                fileList.append(s)
+                
+        for q in range(481, 500):
+            
+            s = "sgtext_skillName_%03d.zip" % (q)
+            
+            if not s in alreadyExistFiles:
+                fileList.append(s)
 
     for i, filename in enumerate(fileList):        
         threadList.append(Thread(target = gatherNaviChara, args = (filename,)))
